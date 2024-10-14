@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: gestion-ecolage
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gestion
+    username: aho
+    password: uuuku
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+server:
+  port: 8086
